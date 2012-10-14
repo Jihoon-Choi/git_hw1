@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Jihoon Choi</title>
+	<title>Jihoon Choi - Registration</title>
 	<link href="css/style.css" rel="stylesheet" type="text/css">	
 	
 </head>
@@ -31,13 +31,13 @@
 					<a href="./index.html">HOME</a>
 					</li>
 				<li id="profile">
-					<a href="./profile.html">Profile</a>
+					<a href="./index1.html">Profile</a>
 					</li>
 				<li id="likedislike">
-					<a href="./like.html">Like disLike</a>
+					<a href="./index2.html">Like disLike</a>
 					</li>
 				<li id="contact_me">
-					<a href="">Contact me</a>
+					<a href="./index3.html">Registration</a>
 					</li>
 				
 			</ul>
@@ -45,80 +45,50 @@
 		
 		
 				
-		<div id="content_index">
-							
-							<table border="1">
-							<tbody>
-								<tr>
-									<th cols="50px">별명</th>
-									<td colspan="3">
-										<input type="text" name="nick" size="10" />
-											
-									</td>
-								</tr>	
-
-								<tr>
-									<th>이메일</th>
-								<td colspan="3">
-							 
-										<input type="text" name="email"/>       
-									</td>
-								</tr>
-
-								
-								<tr>
-								<th>취미</th>
-									<td colspan="3">
-										<a><input type="radio" name="prog" value="m">Programming</a>
-										<a><input type="radio" name="fish" value="f">Fishing</a>
-										<a><input type="radio" name="ipad" value="f">iPad_ing</a>
-									</td>
-								</tr>
-
-								<tr>
-								<th>내가 살았던 동네가 아닌 곳</th>
-
-									<td colspan="3"> <select name="area" >
-										<option value="seoul">수원</option>
-										<option value="anyang">안양</option>
-										<option value="jinju">진주</option>
-										<option value="daeju">대구</option>
-										<option value="pusan">부산</option>
-									 </td>
-								</tr>
-								
-									 <tr>
-									<th>올해 내 나이는</th>
-										<td colspan="3">
-							 
-										<input type="number" name="area" min="0" max="100" step="1" value="1">       
-									</td>
-								</tr>
-								
-								
-								 <tr>
-									<th>내 생년월일</th>
-										<td colspan="3">
-							 
-										<input type="date">       
-									</td>
-								</tr>
-							 
-								
-
-							<tr>
-									 <th align="left" colspan="4">
-									 <input type="checkbox">동의합니다.</th>        
-							</tr>
-
-							</tbody>	
-							</table>
-								<a href="./index.html">
-									<input type="button" value="Home"> 
-								</a>
-		</div>
+		
+		
+	<div id="reg">
+			<h2 title="회원등록">Registration</h2>
+			<form id="reg_form" action="#" method="post">
+				<p>
+					<label for="u_name">이름</label>
+					<input id="u_name" name="u_name" type="text" placeholder="이름" required="required" />
+				</p>
+				<p>
+					<label for="u_phone">폰 번호</label>
+					<input id="u_phone" name="u_phone" type="tel" placeholder="폰 번호" required="required" />
+				</p>
+				<p>
+					<label for="u_email">이메일</label>
+					<input id="u_email" name="u_email" type="email" placeholder="이메일" required="required" />
+				</p>
+				<p>
+					<label for="u_site">웹 사이트</label>
+					<input id="u_site" name="u_site" type="url" placeholder="웹 사이트" />
+				</p>
+				<p>
+					<label for="u_pass">비밀번호</label>
+					<input id="u_pass" name="u_pass" type="password" placeholder="비밀번호" required="required" />
+				</p>
+				<p id="accept">
+					<input id="accept_terms" name="accept_terms" type="checkbox" />
+					<label for="accept_terms">
+						<strong>
+						<a href="#" rel="external">서비스 이용 약관</a>, 
+						<a href="#" rel="external">개인 정보 수집 이용</a>
+						에 동의</strong>합니다.
+					</label>
+				</p>
+				<div class="addButton">
+					<button id="reg_new" type="submit" title="회원가입">Sign-up</button>
+				</div>
+			</form>
+	</div>
+		
+	
 
 	</div>	
+	<hr/>
 	<div id="footer">			
 			<p> 
 				사이트소개 | 이용약관 | 개인정보취급방침 | 고객센터
